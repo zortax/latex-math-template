@@ -1,0 +1,106 @@
+% MDFRAMED STYLES
+
+\mdfdefinestyle{style-box}{ % thick frame and bar for title
+  linewidth=2pt,
+  linecolor=Gray!20,
+%  roundcorner=3pt,
+  innerleftmargin=0.5\baselineskip,
+  innerrightmargin=0.5\baselineskip,
+  innertopmargin=0.4\baselineskip,
+  innerbottommargin=0.4\baselineskip,
+  frametitlebackgroundcolor=Gray!20,
+  frametitleaboveskip=0.3pt,
+  frametitlebelowskip=0.3pt,
+  theoremseparator=,
+  theoremspace=\hfill,
+  theoremtitlefont=\mdseries\scshape,
+  nobreak=true
+}
+
+\mdfdefinestyle{style-background}{ % highlighted background
+  hidealllines=true,
+  backgroundcolor=Gray!5,
+  innerleftmargin=0.5\baselineskip,
+  innerrightmargin=0.5\baselineskip,
+  innertopmargin=0.4\baselineskip,
+  innerbottommargin=0.4\baselineskip,
+}
+
+\mdfdefinestyle{style-thinframe}{ % thin frame
+  linewidth=0.4pt,
+  linecolor=Gray!30,
+  innerleftmargin=0.5\baselineskip,
+  innerrightmargin=0.5\baselineskip,
+  innertopmargin=0.4\baselineskip,
+  innerbottommargin=0.4\baselineskip,
+}
+
+% ENVIRONMENTS
+
+% Definition
+
+\mdtheorem[
+  style=style-box,
+  linecolor=color-definition,
+  frametitlebackgroundcolor=color-definition
+]{definition}{Definition}[section]
+
+% Theorem
+
+\mdtheorem[
+  style=style-box,
+  linecolor=color-theorem,
+  frametitlebackgroundcolor=color-theorem,
+  font=\itshape
+]{theorem}{Theorem}[section]
+
+% Proposition
+
+\mdtheorem[
+  style=style-box,
+  linecolor=color-proposition,
+  frametitlebackgroundcolor=color-proposition,
+  font=\itshape
+]{proposition}[theorem]{Proposition}
+
+% Corollary
+
+\mdtheorem[
+  style=style-box,
+  linecolor=color-corollary,
+  frametitlebackgroundcolor=color-corollary,
+  font=\itshape
+]{corollary}[theorem]{Corollary}
+
+% Lemma
+
+\mdtheorem[
+  style=style-box,
+  linecolor=color-lemma,
+  frametitlebackgroundcolor=color-lemma,
+  font=\itshape
+]{lemma}[theorem]{Lemma}
+
+\theoremstyle{remark}
+
+% Remark
+
+\newtheorem*{remark}{Remark}
+\surroundwithmdframed[
+  style=style-background,
+  backgroundcolor=color-remark
+]{remark}
+
+% Example
+
+\newtheorem*{example}{Example}
+\surroundwithmdframed[
+  style=style-background,
+  backgroundcolor=color-example
+]{example}
+
+% Proof
+
+\surroundwithmdframed[
+  style=style-thinframe
+]{proof}

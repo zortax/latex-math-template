@@ -1,0 +1,111 @@
+% Document Type
+
+\documentclass[11pt, a4paper]{article}
+
+% Settings
+
+\input{SETTINGS.tex}
+
+% Document
+
+\begin{document}
+
+\section{Introduction}
+
+This is a \LaTeX{} Template for free usage. It is designed to be simple, straight-forward and easy to edit.
+Basically everything you can see here you can also adjust to yourself. Just have a look into the \texttt{SETTINGS...} files. Enjoy!
+
+\section{Packages}
+
+I was careful to keep everything as clean as possible. This means that there are no complications between the packages and only well developed and as few packages as possible are used. Of course you can add your own favorites. But with the existing ones most of the usual things should work.
+
+The following packages are included by default and therefore can be used out of the box:
+
+\begin{itemize}[noitemsep]
+	\item \texttt{geometry} (for paper layout, margins)
+	\item \texttt{babel} (you can choose your language)
+	\item \texttt{setspace} (for line spacing)
+	\item \texttt{titlesec} (for title spacing, title formatting)
+	\item \texttt{fancyhdr} (for header, footer)
+	\item \texttt{xcolor} (for coloring)
+	\item \texttt{tikz} (for graphics)
+	\item \texttt{mdframed} (for frames)
+	\item \texttt{nameref}, \texttt{hyperref}, \texttt{cleveref} (for referencing)
+	\item \texttt{amsmath}, \texttt{amssymb}, \texttt{amsthm}, \texttt{mathtools} (for math stuff)
+	\item \texttt{enumitem} (for better enumerations)
+	\item \texttt{lastpage} (to get the number of the last page)
+\end{itemize}
+
+\textsl{(if you do not like one of these you can also remove it, of course)}
+
+\section{Math}
+
+\subsection{Environments}
+
+The following environments are included in this template. You can easily edit colors, spacing, fonts, rounded edges, numbering.
+I do not show off everything you can do with the template here. Especially I do not show any kind of linking/labeling.
+
+\begin{definition}[Group]
+	Let $G$ be a set, $e \in G$ and $\circ \cl G \times G \to G$ a binary operation on $G$. We call $(G, \circ, e)$ a \emph{group} if:
+	
+	\begin{enumerate}[(G1)]
+		\item dsadas...
+		\item dads...
+		\item dsa...
+	\end{enumerate}
+\end{definition}
+
+\begin{proposition}
+	This is a proposition ...
+\end{proposition}
+
+\begin{theorem}[Cayley's Theorem]
+	This is a theorem ...
+	You can change the color to that it's different from the proposition. You can do that with all these Environments. Just have a look into the settings files. Also notice that you can add a name for the theorem (or for the definition; see above), but you don't have to.
+\end{theorem}
+
+\begin{proof}
+	Here we proof a Proposition, Theorem, Lemma or Corollary.
+	
+	You can also switch that q.e.d.-symbol downright.
+\end{proof}
+
+\begin{lemma}
+	This is a lemma ...
+	It goes with the same numbering as Propositions, Theorems and Corollarys. You can change that too. You can also turn off the numbering for single boxes.
+\end{lemma}
+
+\begin{corollary}
+	This is a corollary ...
+\end{corollary}
+
+\begin{remark}
+	This is a remark. I will write some more text here so that you can see the background color.
+	
+	Of course you can change the colors and also the frame around here too.
+	
+	Some more text...
+\end{remark}
+
+\begin{remark}[to remarks]
+	I want to remark that you can also add special notes, i.e. labels, to remarks, just as you may already know from your documents.
+\end{remark}
+
+\begin{example}
+	This is an example! Examples are essential to learn something.
+\end{example}
+
+\subsection{Commands}
+
+Commands include symbol shortcuts as well as templates for frequently-used symbol strings. You can edit them and/or add your own.
+
+I will list some selected templates here:
+
+\subparagraph{Map Definition}
+
+If you want to define a map in a clear layout, you can use \\
+\verb|\map{map name}{from}{to}{variable name}{where variable is mapped to}|. \\
+For example \verb|\map{L_A}{K^n}{K^m}{v}{A \cdot v}| gives you 
+\map{L_A}{K^n}{K^m}{v}{A \cdot v}.
+
+\end{document}
