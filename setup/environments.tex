@@ -1,4 +1,4 @@
-% MDFRAMED STYLES
+%%% MDFRAMED STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % thick frame and bar for title
 
@@ -41,7 +41,7 @@
   innerbottommargin=0.4\baselineskip,
 }
 
-% ENVIRONMENTS
+%%% ENVIRONMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Definition
 
@@ -49,7 +49,7 @@
   style=style-box,
   linecolor=color-definition,
   frametitlebackgroundcolor=color-definition
-]{definition}{Definition}[section]
+]{definition}{\definitionname}[section]
 
 % Theorem
 
@@ -58,7 +58,7 @@
   linecolor=color-theorem,
   frametitlebackgroundcolor=color-theorem,
   font=\itshape
-]{theorem}{Theorem}[section]
+]{theorem}{\theoremname}[section]
 
 % Proposition
 
@@ -67,7 +67,7 @@
   linecolor=color-proposition,
   frametitlebackgroundcolor=color-proposition,
   font=\itshape
-]{proposition}[theorem]{Proposition}
+]{proposition}[theorem]{\propositionname}
 
 % Corollary
 
@@ -76,7 +76,7 @@
   linecolor=color-corollary,
   frametitlebackgroundcolor=color-corollary,
   font=\itshape
-]{corollary}[theorem]{Corollary}
+]{corollary}[theorem]{\corollaryname}
 
 % Lemma
 
@@ -85,13 +85,13 @@
   linecolor=color-lemma,
   frametitlebackgroundcolor=color-lemma,
   font=\itshape
-]{lemma}[theorem]{Lemma}
+]{lemma}[theorem]{\lemmaname}
 
 \theoremstyle{remark}
 
 % Remark
 
-\newtheorem*{remark}{Remark}
+\newtheorem*{remark}{\remarkname}
 \surroundwithmdframed[
   style=style-background,
   backgroundcolor=color-remark
@@ -99,7 +99,7 @@
 
 % Example
 
-\newtheorem*{example}{Example}
+\newtheorem*{example}{\examplename}
 \surroundwithmdframed[
   style=style-background,
   backgroundcolor=color-example
