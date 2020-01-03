@@ -1,6 +1,9 @@
-%%% COMMAND OVERWRITINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% COMMAND OVERWRITINGS, SYMBOLS, NUMBERINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \renewcommand*\qedsymbol{$\blacksquare$}
+\renewcommand{\thefootnote}{\arabic{footnote}} % normal footnotes on page
+\renewcommand{\thempfootnote}{\fnsymbol{mpfootnote}} % footnotes on minipages, e.g. in mdframed environments
+
 
 %%% SYMBOL SHORTCUTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -33,9 +36,29 @@
 
 %%% TEMPLATES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% General
+
+% write a set definition like: { #1 | #2 }
+\newcommand*{\setdefinition}[2]{
+  \{#1 \mid #2\}
+}
+
+% write a map definition like: 
 \newcommand*{\map}[5]{
   \begin{align*}
     #1 \cl #2 &\to     #3 \\
            #4 &\mapsto #5
   \end{align*}
+}
+
+% Linear Algebra
+
+% write set of matrices like: M( #1 x #2 ; #3 )
+\newcommand*{\matrices}[3]{
+  \operatorname{M}(#1 \times #2; #3)
+}
+
+% write eigenspaces like: Eig( #1 ; #2 )
+\newcommand*{\Eig}[2]{
+  \operatorname{Eig}(#1; #2)
 }
