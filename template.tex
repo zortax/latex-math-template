@@ -22,18 +22,18 @@ I was careful to keep everything as clean as possible. This means that there are
 The following packages are included by default and therefore can be used out of the box:
 
 \begin{itemize}[noitemsep]
-\item \texttt{geometry} (for paper layout, margins)
-\item \texttt{babel} (you can choose your language)
-\item \texttt{setspace} (for line spacing)
-\item \texttt{titlesec} (for title spacing, title formatting)
-\item \texttt{fancyhdr} (for header, footer)
-\item \texttt{xcolor} (for coloring)
-\item \texttt{tikz} (for graphics)
-\item \texttt{mdframed} (for frames)
-\item \texttt{nameref}, \texttt{hyperref}, \texttt{cleveref} (for referencing)
-\item \texttt{amsmath}, \texttt{amssymb}, \texttt{amsthm}, \texttt{mathtools} (for math stuff)
-\item \texttt{enumitem} (for better enumerations)
-\item \texttt{lastpage} (to get the number of the last page)
+  \item \texttt{geometry} (for paper layout, margins)
+  \item \texttt{babel} (you can choose your language)
+  \item \texttt{setspace} (for line spacing)
+  \item \texttt{titlesec} (for title spacing, title formatting)
+  \item \texttt{fancyhdr} (for header, footer)
+  \item \texttt{xcolor} (for coloring)
+  \item \texttt{tikz} (for graphics)
+  \item \texttt{mdframed} (for frames)
+  \item \texttt{nameref}, \texttt{hyperref}, \texttt{cleveref} (for referencing)
+  \item \texttt{amsmath}, \texttt{amssymb}, \texttt{amsthm}, \texttt{mathtools} (for math stuff)
+  \item \texttt{enumitem} (for better enumerations)
+  \item \texttt{lastpage} (to get the number of the last page)
 \end{itemize}
 
 \textsl{(if you do not like one of these you can also remove it, of course)}
@@ -76,7 +76,8 @@ I do not show off everything you can do with the template here. Especially I do 
 \end{lemma}
 
 \begin{corollary}
-  This is a corollary ...
+  This \footnote{By default, footnotes are placed at the bottom of the frame. You can change this to the position directly below the frame.} is a corollary ...
+  I will use it to show off the footnotes. \footnote{By default, the symbols differ from those of footnotes in the text. You can change this, of course.}
 \end{corollary}
 
 \begin{remark}
@@ -91,21 +92,36 @@ I do not show off everything you can do with the template here. Especially I do 
   I want to remark that you can also add special notes, i.e. labels, to remarks, just as you may already know from your documents.
 \end{remark}
 
+\begin{enumremark}
+  \item People often use remarks to note some general properties whose proofs are very short.
+  \item Therefore we created the \verb|enumremark| environment.
+  \item Basically it's just an \verb|enumitem| environment inside an \verb|remark| environment.
+\end{enumremark}
+
 \begin{example}
   This is an example! Examples are essential to learn something.
 \end{example}
 
-\subsection{Commands}
+\subsection{Commands in text mode}
 
 Commands include symbol shortcuts as well as templates for frequently-used symbol strings. You can edit them and/or add your own.
 
 I will list some selected templates here:
 
-\subparagraph{Map Definition}
+\paragraph{Map Definition}
 
-If you want to define a map in a clear layout, you can use \\
-\verb|\map{map name}{from}{to}{variable name}{where variable is mapped to}|. \\
-For example \verb|\map{L_A}{K^n}{K^m}{v}{A \cdot v}| gives you
-\map{L_A}{K^n}{K^m}{v}{A \cdot v}.
+If you want to define a map in a clear layout, you can use:
+\begin{center}\verb|\mapdefinition{map name}{from}{to}{variable name}{where variable is mapped to}|\end{center}
+For example \verb|\mapdefinition{L_A}{K^n}{K^m}{v}{A \cdot v}| gives you:
+\mapdefinition{L_A}{K^n}{K^m}{v}{A \cdot v}
+
+\subsection{Commands in math mode}
+
+\paragraph{Set Definition}
+
+If you want to define a set, you can use:
+\begin{center}\verb|\setdefinition{variable}{constraint}|\end{center}
+For example \verb|$$ S = \setdefinition{x \in \Q}{x^2 < 5} $$| gives you:
+$$ S = \setdefinition{x \in \Q}{x^2 < 5} $$
 
 \end{document}

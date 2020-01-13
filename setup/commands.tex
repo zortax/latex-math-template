@@ -1,6 +1,6 @@
 %%% COMMAND OVERWRITINGS, SYMBOLS, NUMBERINGS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \renewcommand*\qedsymbol{$\blacksquare$}
+% \renewcommand*\qedsymbol{$\blacksquare$} % alternative QED symbol
 \renewcommand{\thefootnote}{\arabic{footnote}} % normal footnotes on page
 \renewcommand{\thempfootnote}{\fnsymbol{mpfootnote}} % footnotes on minipages, e.g. in mdframed environments
 
@@ -30,8 +30,19 @@
 \newcommand*{\cleq}{\coloneqq}
 \newcommand*{\eqcl}{\eqqcolon}
 
+% Sets
+
+\newcommand*{\N}{\mathbb{N}} % natural numbers
+\newcommand*{\Z}{\mathbb{Z}} % integers
+\newcommand*{\Q}{\mathbb{Q}} % rational numbers
+\newcommand*{\R}{\mathbb{R}} % real numbers
+\newcommand*{\C}{\mathbb{C}} % complex numbers
+
 %%% MATH OPERATORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% General
+
+\DeclareMathOperator{\id}{id}
 \DeclareMathOperator{\sgn}{sgn}
 
 %%% TEMPLATES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -43,22 +54,10 @@
   \{#1 \mid #2\}
 }
 
-% write a map definition like: 
-\newcommand*{\map}[5]{
+% write a nice map definition
+\newcommand*{\mapdefinition}[5]{
   \begin{align*}
     #1 \cl #2 &\to     #3 \\
            #4 &\mapsto #5
   \end{align*}
-}
-
-% Linear Algebra
-
-% write set of matrices like: M( #1 x #2 ; #3 )
-\newcommand*{\matrices}[3]{
-  \operatorname{M}(#1 \times #2; #3)
-}
-
-% write eigenspaces like: Eig( #1 ; #2 )
-\newcommand*{\Eig}[2]{
-  \operatorname{Eig}(#1; #2)
 }

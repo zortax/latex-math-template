@@ -97,6 +97,17 @@
   backgroundcolor=color-remark
 ]{remark}
 
+% Enumeration Remark
+
+\newenvironment{enumremark}{
+  \begin{remark}
+    \begin{enumerate}[(a)]
+      \item[]
+}{
+    \end{enumerate}
+  \end{remark}
+}
+
 % Example
 
 \newtheorem*{example}{\examplename}
