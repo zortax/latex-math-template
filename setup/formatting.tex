@@ -1,3 +1,9 @@
+%%% SYMBOLS USED BY NUMBERINGS, ENVIRONMENTS, ... %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \renewcommand*\qedsymbol{$\blacksquare$} % alternative QED symbol
+\renewcommand{\thefootnote}{\arabic{footnote}} % normal footnotes on page
+\renewcommand{\thempfootnote}{\fnsymbol{mpfootnote}} % footnotes on minipages, e.g. in mdframed environments
+
 %%% MDFRAMED STYLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % thick frame and bar for title
@@ -121,3 +127,9 @@
 \surroundwithmdframed[
   style=style-thinframe
 ]{proof}
+
+%%% TEXT FORMATTING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% definitions
+
+\newcommand*{\df}[1]{\colorbox{color-definition}{\emph{#1}}}
