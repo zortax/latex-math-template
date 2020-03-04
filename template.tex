@@ -17,23 +17,28 @@ Basically everything you can see here you can also adjust to yourself. Just have
 
 \section{Packages}
 
-I was careful to keep everything as clean as possible. This means that there are no complications between the packages and only well developed and as few packages as possible are used. Of course you can add your own favorites. But with the existing ones most of the usual things should work.
+I was careful to keep everything as clean as possible. This means that there are
+no complications between the packages and only well developed and as few
+packages as possible are used. Of course you can add your own favorites. But
+with the existing ones most of the usual things should work.
 
-The following packages are included by default and therefore can be used out of the box:
+The following packages are included by default and therefore can be used out of
+the box:
 
-\begin{itemize}[noitemsep]
-  \item \texttt{geometry} (for paper layout, margins)
-  \item \texttt{babel} (you can choose your language)
-  \item \texttt{setspace} (for line spacing)
-  \item \texttt{titlesec} (for title spacing, title formatting)
-  \item \texttt{fancyhdr} (for header, footer)
-  \item \texttt{xcolor} (for coloring)
-  \item \texttt{tikz} (for graphics)
-  \item \texttt{mdframed} (for frames)
-  \item \texttt{nameref}, \texttt{hyperref}, \texttt{cleveref} (for referencing)
-  \item \texttt{amsmath}, \texttt{amssymb}, \texttt{amsthm}, \texttt{mathtools} (for math stuff)
-  \item \texttt{enumitem} (for better enumerations)
-  \item \texttt{lastpage} (to get the number of the last page)
+\begin{itemize}
+\item \texttt{geometry} (for paper layout, margins)
+\item \texttt{babel} (you can choose your language)
+\item \texttt{setspace} (for line spacing)
+\item \texttt{titlesec} (for title formatting \& spacing)
+\item \texttt{fancyhdr} (for header, footer)
+\item \texttt{xcolor} (for coloring)
+\item \texttt{tikz} (for graphics)
+\item \texttt{mdframed} (for frames)
+\item \texttt{nameref}, \texttt{hyperref}, \texttt{cleveref} (for referencing)
+\item \texttt{amsmath}, \texttt{amssymb}, \texttt{amsthm}, \texttt{mathtools}
+  (for math stuff)
+\item \texttt{enumitem} (for better lists \& enumerations)
+\item \texttt{lastpage} (to get the number of the last page)
 \end{itemize}
 
 \textsl{(if you do not like one of these you can also remove it, of course)}
@@ -47,12 +52,11 @@ I do not show off everything you can do with the template here. Especially I do 
 
 \begin{definition}[Group]
   Let $G$ be a set, $e \in G$ and $\circ \cl G \times G \to G$ a binary operation on $G$. We call $(G, \circ, e)$ a \df{group} if:
-
-  \begin{enumerate}[(G1)]
+  \begin{axioms}[(G1)]
   \item dsadas...
   \item dads...
   \item dsa...
-  \end{enumerate}
+  \end{axioms}
 \end{definition}
 
 \begin{proposition}
@@ -89,14 +93,8 @@ I do not show off everything you can do with the template here. Especially I do 
 \end{remark}
 
 \begin{remark}[to remarks]
-  I want to remark that you can also add special notes, i.e. labels, to remarks, just as you may already know from your documents.
+  I want to remark that you can also add these names or labels to remarks, just like ``(to remarks)'' in this one.
 \end{remark}
-
-\begin{enumremark}
-  \item People often use remarks to note some general properties whose proofs are very short.
-  \item Therefore we created the \verb|enumremark| environment.
-  \item Basically it's just an \verb|enumitem| environment inside an \verb|remark| environment.
-\end{enumremark}
 
 \begin{example}
   This is an example! Examples are essential to learn something.
