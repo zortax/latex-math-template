@@ -33,7 +33,7 @@ the box:
 \item \texttt{nameref}, \texttt{hyperref}, \texttt{cleveref} (for referencing)
 \item \texttt{amsmath}, \texttt{amssymb}, \texttt{amsthm}, \texttt{mathtools}
   (for math stuff)
-\item \texttt{enumitem} (for better lists \& enumerations)
+\item \texttt{enumitem} (for better list environments)
 \item \texttt{lastpage} (to get the number of the last page)
 \end{itemize}
 
@@ -117,5 +117,7 @@ If you want to define a set, you can use:
 \begin{center}\verb|\setdefinition{variable}{constraint}|\end{center}
 For example \verb|$$ S = \setdefinition{x \in \Q}{x^2 < 5} $$| gives you:
 $$ S = \setdefinition{x \in \Q}{x^2 < 5} $$
+It scales automatically with it's content:
+$$ A = \setdefinition{\frac{a}{b}}{...} $$
 
 \end{document}
