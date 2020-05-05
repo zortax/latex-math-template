@@ -57,3 +57,9 @@
            #4 &\mapsto #5
   \end{align*}
 }
+
+% Code Shortcut
+\LetLtxMacro\oldttfamily\ttfamily
+\DeclareRobustCommand{\ttfamily}{\oldttfamily\vsname ttsize\endcsname}
+\def\ttsize{\small}
+\newcommand{\code}[1]{\colorbox{light-gray}{\textttt{#1}}}
